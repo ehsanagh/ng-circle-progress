@@ -1,12 +1,6 @@
 {
   "name": "ng-circle-progress",
   "version": "1.5.0",
-  "scripts": {
-    "build": "ng-packagr -p ng-package.json",
-    "build:watch": "npm run build -- -w",
-    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
-    "test": "tsc && karma start"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bootsoon/ng-circle-progress"
@@ -64,5 +58,18 @@
   },
   "peerDependencies": {
     "@angular/core": ">=4.0.0"
+  },
+  "main": "bundles/ng-circle-progress.umd.js",
+  "module": "fesm5/ng-circle-progress.js",
+  "es2015": "fesm2015/ng-circle-progress.js",
+  "esm5": "esm5/ng-circle-progress.js",
+  "esm2015": "esm2015/ng-circle-progress.js",
+  "fesm5": "fesm5/ng-circle-progress.js",
+  "fesm2015": "fesm2015/ng-circle-progress.js",
+  "typings": "ng-circle-progress.d.ts",
+  "metadata": "ng-circle-progress.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
   }
 }
